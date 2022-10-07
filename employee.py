@@ -45,7 +45,7 @@ class Employee:
             finalText =  f"{self.name} works on a {self.hours} at {self.basePay}/hour"
             finalText += self.textCheck()
         else:
-            finalText =  f"{self.name} works on monthly salary of {self.basePay}"
+            finalText =  f"{self.name} works on a monthly salary of {self.basePay}"
             finalText+= self.textCheck()
 
         finalText += f" Their total pay is {self.get_pay()}."
