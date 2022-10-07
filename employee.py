@@ -24,7 +24,7 @@ class Employee:
 
     def textCheck(self):
         if self.commissionType == "commission":
-            return f" and receives a commission for {self.commissionAmount}(s) at {self.commissionPay}/contract."
+            return f" and receives a commission for {self.commissionAmount} contract(s) at {self.commissionPay}/contract."
         elif self.commissionType == "bonus":
             return f" and receives a bonus commission of {self.commissionPay}."
         else:
@@ -42,7 +42,7 @@ class Employee:
 
     def __str__(self):
         if self.contractType == "hour":
-            finalText =  f"{self.name} works on a {self.hours} at {self.basePay}/hour"
+            finalText =  f"{self.name} works on a contract of {self.hours} hours at {self.basePay}/hour"
             finalText += self.textCheck()
         else:
             finalText =  f"{self.name} works on a monthly salary of {self.basePay}"
