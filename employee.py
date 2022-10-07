@@ -26,7 +26,7 @@ class Employee:
         if self.commissionType == "commission":
             return f" and receives a commission for {self.commissionAmount}(s) at {self.commissionPay}/contract."
         elif self.commissionType == "bonus":
-            return f" and receives a bonus commission of {self.commissionPay}"
+            return f" and receives a bonus commission of {self.commissionPay}."
         else:
             return "."
 
