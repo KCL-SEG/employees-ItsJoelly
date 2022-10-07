@@ -49,7 +49,6 @@ class Employee:
             finalText+= self.textCheck()
 
         finalText += f" Their total pay is {self.get_pay()}."
-        print(finalText)
         return finalText
 
 
